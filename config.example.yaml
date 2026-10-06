@@ -1,0 +1,13 @@
+# Copy to watchdog.yaml and edit.
+process_name: worker.exe
+launch_command: [C:/apps/worker.exe, --headless]
+
+restart_threshold: 3
+restart_window_minutes: 30
+max_runtime_minutes: 150      # remove this line to disable planned restarts
+
+check_interval_seconds: 1
+startup_timeout_seconds: 60
+stop_timeout_seconds: 5
+relaunch_delay_seconds: 30
+log_file: watchdog.log
